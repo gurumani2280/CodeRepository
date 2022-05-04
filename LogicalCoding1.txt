@@ -1,0 +1,30 @@
+======assignment=======
+swap --- using 3rd variable, without using 3rd variable
+
+find the given number is Even or Odd
+find the given number is divisible by 3 or not
+find the given number is divisible by 5 or not
+FIZZ BUZZ problem -- 
+	FizzBuzz is a game that is popular among kids.
+	The rules of the FizzBuzz game are very simple.
+
+	1.Say Fizz if the number is divisible by 3.
+	2.Say Buzz if the number is divisible by 5.
+	3.Say FizzBuzz if the number is divisible by both 3 and 5.
+	4.Return the number itself, if the number is not divisible by 3 and 5.
+
+	Note: Instead of 3 and 5, you can use different divisors (like 5 and 7, etc.) and string (Fizz and Buzz) also.
+
+PrimeNumber
+find factorial of a given number
+
+febonacci series
+Armstrong number
+
+sum of digits of number == 234 o/p = 9 
+count of digit of number , even digit count, odd digit count
+reverse of digit , 234 o/p = 432
+
+
+
+
