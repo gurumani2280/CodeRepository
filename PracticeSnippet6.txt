@@ -1,0 +1,206 @@
+class Person 
+{
+	String firstName;
+	int age;
+
+	Person(String firstName, int age)
+	{
+		this.firstName = firstName;
+		this.age = age;
+	}
+
+	public static void main(String[] args) 
+	{
+		Person p1 = new Person("Vijay", 22);
+		Person p2 = new Person("Raghu", 24);
+		Person p3 = new Person("Ravi", 25);
+		System.out.println(p1.firstName + ", " + p1.age);
+		System.out.println(p2.firstName + ", " + p2.age);
+		System.out.println(p3.firstName + ", " + p3.age);
+	}
+}
+========-------------==============-------------=========
+class I
+{
+	I()
+	{
+		this(10);
+		System.out.println("I()");
+	}
+	I(int i)
+	{
+		this(i, i);
+		System.out.println("I(int)");
+	}
+	I(int i, int j)
+	{
+		System.out.println("I(int, int)");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main begin");
+		I obj1 = new I();
+		System.out.println("-----------");
+		I obj2 = new I();
+		System.out.println("-----------");
+		I obj3 = new I(30);
+		System.out.println("-----------");
+		I obj4 = new I(30, 40);
+		System.out.println("-----------");
+		System.out.println("main end");
+	}
+}
+========----------==========---------=========------==========
+class J 
+{
+	J()
+	{
+		System.out.println("J()");
+		this(90);
+	}
+	J(int i)
+	{
+		System.out.println("J(int)");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}
+==========-------=============----------============---------=====
+class L
+{
+	L()
+	{
+		this(90);
+		System.out.println("L()");
+	}
+	L(int i)
+	{
+		this();
+		System.out.println("L()");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}
+===========-----------==========--------------=========
+class H 
+{
+	static int p = 10;
+
+	public static void main(String[] args) 
+	{
+		System.out.println("a:" + p);
+		System.out.println("b:" + H.p);
+		H obj = new H();
+		System.out.println("c:" + obj.p);
+	}
+}
+========-----------============-------------==========
+class I 
+{
+	static int count;
+	I()
+	{
+		count ++;
+	}
+	public static void main(String[] args) 
+	{
+		I obj1 = new I();
+		System.out.println("a:" + count);
+		I obj2 = new I();
+		System.out.println("b:" + count);
+		I obj3 = new I();
+		System.out.println("c:" + count);
+		I obj4 = new I();
+		System.out.println("d:" + count);
+	}
+}
+==========------------===========-----------=========
+class J 
+{
+	static int count;
+	J()
+	{
+		count ++;
+	}
+	public static void main(String[] args) 
+	{
+		J obj1 = new J();
+		System.out.println("a:" + count);
+		J obj2 = new J();
+		System.out.println("b:" + count);
+		J obj3 = new J();
+		System.out.println("c:" + count);
+		J obj4 = new J();
+		System.out.println("d:" + count);
+		System.out.println("e:" + obj1.count);
+		System.out.println("f:" + obj2.count);
+		System.out.println("g:" + obj3.count);
+		System.out.println("h:" + obj4.count);
+	}
+}
+=========-----------============----------========
+class K 
+{
+	static int count;
+	K()
+	{
+		count ++;
+	}
+	K(int i)
+	{
+		count ++;
+	}
+	K(int i, int j)
+	{
+		count ++;
+	}
+	public static void main(String[] args) 
+	{
+		K k1 = new K();
+		K k2 = new K(10);
+		K k3 = new K(10, 20);
+		K k4 = new K(20);
+		K k5 = new K();
+		System.out.println(count);
+	}
+}
+
+class L 
+{
+	static int count;
+	L()
+	{
+	}
+
+	L(int i)
+	{
+	}
+
+	L(int i, int j)
+	{
+	}
+
+	{
+		count ++;
+	}
+
+	public static void main(String[] args) 
+	{
+		L obj1 = new L();
+		L obj2 = new L();
+		L obj3 = new L(20);
+		L obj4 = new L();
+		L obj5 = new L();
+		L obj6 = new L(1, 4);
+		L obj7 = new L();
+		L obj8 = new L(4);
+		L obj9 = new L();
+		L obj10 = new L(7, 6);
+		System.out.println(count);
+	}
+}
+
